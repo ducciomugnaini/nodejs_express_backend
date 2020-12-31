@@ -5,7 +5,7 @@
 
 var express = require('express');
 
-// 4- add custom module
+// 4 - add custom module
 
 var utlsDemo = require('../utilities/utilities_demo');
 
@@ -18,12 +18,21 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
-
     var sumRes = utlsDemo.sum(3,4);
 
-    var result = utlsDemo.demo_query();
+    // var result = utlsDemo.demo_query();
   
-    res.send('respond with a demo' + sumRes);
+    res.json({'myResponse': sumRes});
+
+});
+
+router.get('/demoRouting', function(req, res, next) {
+
+    var sumRes = utlsDemo.sum(10,7);
+
+    // var result = utlsDemo.demo_query();
+  
+    res.json({'myResponse': sumRes});
 
 });
 

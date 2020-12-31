@@ -21,6 +21,14 @@ sqlConnection.executeQuery = function (query) {
 
     var that = this;
 
+    var config = {
+        user: 'mugna87',
+        password: 'mugna87',
+        server: 'localhost',
+        port: 52713,
+        database: 'Sandboxlearning'
+    };
+
     var result = {
         connectionError: null,
         queryError: null,

@@ -9,7 +9,7 @@ var utility_demo = {}
 
 utility_demo.sum = function (a, b) {
 
-    return a + b; //
+    return a + b;
     
 };
 
@@ -17,7 +17,7 @@ utility_demo.demo_query = function(){
 
     var result = sqlConnection.executeQuery('select * from Disasters');
 
-    console.log(result);
+    return result;
 
 }
 
